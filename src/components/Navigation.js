@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import * as ROUTES from './routes'
+import SignOutButton from './SignOut'
 const Navigation = () => {
   return (
     <div>
       <ul>
-      <li>
+        <li>
           <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
         </li>
         <li>
@@ -22,6 +23,9 @@ const Navigation = () => {
         </li>
         <li>
           <Link to={ROUTES.ADMIN}>Admin</Link>
+        </li>
+        <li>
+          <SignOutButton />
         </li>
       </ul>
     </div>
