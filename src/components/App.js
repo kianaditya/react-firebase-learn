@@ -10,6 +10,8 @@ import HomePage from './Home'
 import AccountPage from './Account'
 import AdminPage from './Admin'
 
+import { withAuthentication } from './session/Index'
+
 const App = () => {
   return (
     <Router>
@@ -28,4 +30,4 @@ const App = () => {
   )
 }
 
-export default App
+export default withAuthentication(App)
